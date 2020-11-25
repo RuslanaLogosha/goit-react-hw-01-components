@@ -1,7 +1,12 @@
-import Profile from "./components/profile/profile";
-import user from './components/profile/user.json'
-import statisticalData from './components/statistics/statistical-data.json';
-import Statistics from './components/statistics/statistics';
+import Profile from "./components/Profile/profile";
+import user from './components/Profile/user.json';
+
+import Statistics from './components/Statistics/statistics';
+import statisticalData from './components/Statistics/statistical-data.json';
+
+import FriendList from './components/FriendList/friendList';
+import friends from './components/FriendList/friends.json';
+
 
 
 export default function App() {
@@ -16,8 +21,10 @@ export default function App() {
       />
       <Statistics title="Upload stats" stats={statisticalData} />
       <Statistics stats={statisticalData} />
+      <FriendList friends={friends} />
     </div> 
 
   );
 }
+
 
