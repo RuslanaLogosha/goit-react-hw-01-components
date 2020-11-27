@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 100px;
+  align-items: center;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.status {
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.true {
+  background-color: green;
+}
+
+.false {
+  background-color: red;
+}
+.avatar {
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,19 +1,20 @@
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
+import s from './friendListItem.module.css';
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
+const FriendListItem = ({ id, avatar, name, isOnline }) => {
   return (
-    <div>
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
-    </div>
+    <li className={s.item} key={id}>
+      <span className={`${s.status} ${s[isOnline]}`}>{isOnline}</span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
+    </li>
   );
 };
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  isOnline: PropTypes.oneOf([true, false]),
 };
 
 export default FriendListItem;
