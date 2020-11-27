@@ -1,14 +1,13 @@
 .item {
   display: flex;
-  margin-bottom: 20px;
-  width: 250px;
   height: 100px;
   align-items: center;
-  box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px greenyellow;
+  margin-bottom: 30px;
 }
 
 .status {
-  display: block;
+  display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
   width: 10px;

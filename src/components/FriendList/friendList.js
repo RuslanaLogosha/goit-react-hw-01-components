@@ -7,6 +7,7 @@ const FriendList = ({ friends }) => {
     <ul className={s.friendlist}>
       {friends.map(friend => (
         <FriendListItem
+          key={friend.id}
           avatar={friend.avatar}
           name={friend.name}
           isOnline={friend.isOnline}
